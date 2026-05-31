@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Marcellus", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-renaissance-black: #0d0c0b;
+  --color-renaissance-dark: #171412;
+  --color-renaissance-gold: #c5a880;
+  --color-renaissance-gold-light: #ebd6b7;
+  --color-renaissance-gold-dark: #846842;
+  --color-renaissance-gold-vivid: #fbb03b;
+  --color-renaissance-accent: #b08149;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-renaissance-black);
+  background-image: 
+    radial-gradient(circle at 50% 10%, rgba(132, 104, 66, 0.12) 0%, transparent 60%),
+    radial-gradient(circle at 10% 80%, rgba(176, 129, 73, 0.04) 0%, transparent 45%);
+  background-attachment: fixed;
+  color: #f3ebd8;
+}
+
+/* Custom gorgeous gold scrollbar for vintage gallery list feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #171412;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5a880;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #fbb03b;
+}
+
+.gallery-card {
+  background-color: #171412;
+  border: 1px solid rgba(197, 168, 128, 0.18);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.03);
+}
+
+.gold-border {
+  border-color: rgba(197, 168, 128, 0.25);
+}
+
+.gold-text {
+  color: #c5a880;
+}
+
+/* Exquisite decorative frame styling */
+.painting-frame {
+  border: 12px solid #201a15;
+  outline: 1px solid #c5a880;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(0,0,0,0.8);
+  background: #100b08;
+}
