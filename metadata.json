@@ -1,0 +1,8 @@
+{
+  "name": "YOUKNOWSKI",
+  "description": "Веб-приложение для стримеров, объединяющее Twitch чат и ИИ для генерации творческих тем для рисования и оценки рисунков.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
