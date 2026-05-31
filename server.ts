@@ -7,7 +7,7 @@ import { Room, RoomState, ChatMessage, Round } from "./src/types";
 import WebSocket from "ws";
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const GROQ_API_KEY = process.env.GROQ_API_KEY || "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";
 let groqStatus = { checked: false, working: false, error: "" };
